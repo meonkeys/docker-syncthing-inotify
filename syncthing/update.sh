@@ -8,4 +8,7 @@ current="${current#v}"
 
 set -x
 sed -ri 's/^(ENV SYNCTHING_VERSION) .*/\1 '"$current"'/' Dockerfile
+docker build -t meonkeys/syncthing .
+docker tag meonkeys/syncthing:latest meonkeys/syncthing:v$current
+docker push meonkeys/syncthing
 ./inotify/update.sh
