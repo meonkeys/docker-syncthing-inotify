@@ -2,7 +2,7 @@
 
 [![](https://imagelayers.io/badge/meonkeys/syncthing-inotify:latest.svg)](https://imagelayers.io/?images=meonkeys/syncthing-inotify:latest 'Get your own badge on imagelayers.io')
 
-Adds [inotify](https://en.wikipedia.org/wiki/Inotify) support to a local running [Syncthing](https://syncthing.net/) server.
+Add [inotify](https://en.wikipedia.org/wiki/Inotify) support to a local running [Syncthing](https://syncthing.net/) server running in a [Docker](https://www.docker.com/) container.
 
 See [`Dockerfile`](https://github.com/meonkeys/docker-syncthing-inotify/blob/master/Dockerfile) and [example `run.sh` script](https://github.com/meonkeys/docker-syncthing-inotify/blob/master/run.sh) for usage.
 
