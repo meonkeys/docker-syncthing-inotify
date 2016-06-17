@@ -21,5 +21,5 @@ docker run -d \
 	-v /etc:/etc \
 	-v /mnt:/mnt \
 	--net host \
-	"meonkeys/syncthing-inotify:v$SYNCTHING_INOTIFY_VERSION" "$@"
+	"meonkeys/syncthing-inotify:$SYNCTHING_INOTIFY_VERSION" "$@"
 timeout 10s docker logs -f syncthing-inotify || true
