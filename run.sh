@@ -1,5 +1,8 @@
 #!/bin/bash
-set -e
+
+set -o errexit
+set -o nounset
+set -o pipefail
 
 if [ "$HOME" = '/home/user' ]; then
   echo >&2 'uh oh, HOME=/home/user'
@@ -11,7 +14,7 @@ mkdir -p "$HOME/.config/syncthing"
 SYNCTHING_INOTIFY_VERSION=0.8.2
 
 set -x
-# -v /etc:/host/etc \
+
 docker run -d \
   --name syncthing-inotify \
   --restart always \
@@ -22,4 +25,5 @@ docker run -d \
   -v /mnt:/mnt \
   --net host \
   "meonkeys/syncthing-inotify:$SYNCTHING_INOTIFY_VERSION" "$@"
+
 timeout 10s docker logs -f syncthing-inotify || true
