@@ -1,6 +1,6 @@
 # Syncthing inotify support
 
-[![](https://imagelayers.io/badge/meonkeys/syncthing-inotify:latest.svg)](https://imagelayers.io/?images=meonkeys/syncthing-inotify:latest 'Get your own badge on imagelayers.io')
+[![Docker Pulls](https://img.shields.io/docker/pulls/meonkeys/syncthing-inotify.svg)](https://hub.docker.com/r/meonkeys/syncthing-inotify/)
 
 Add [inotify](https://en.wikipedia.org/wiki/Inotify) support to a local running [Syncthing](https://syncthing.net/) server running in a [Docker](https://www.docker.com/) container.
 
