@@ -11,7 +11,7 @@ fi
 
 mkdir -p "$HOME/.config/syncthing"
 
-SYNCTHING_INOTIFY_VERSION=0.8.4
+SYNCTHING_INOTIFY_VERSION=0.8.5
 
 set -x
 
